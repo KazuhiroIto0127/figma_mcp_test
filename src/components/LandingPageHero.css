@@ -1,0 +1,86 @@
+.landing-page-hero {
+  background-color: #ffffff;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 500px;
+}
+
+.profile-image {
+  position: absolute;
+  left: 75px;
+  top: 59px;
+  width: 90px;
+  height: 90px;
+}
+
+.profile-image img {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.main-title {
+  position: absolute;
+  left: 75px;
+  top: 162px;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: #000000;
+  text-align: left;
+  white-space: nowrap;
+  margin: 0;
+  line-height: normal;
+}
+
+.description {
+  position: absolute;
+  left: 75px;
+  top: 229px;
+  width: 378px;
+  height: 181px;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  color: #000000;
+  text-align: left;
+  line-height: 38px;
+}
+
+.description p {
+  display: block;
+  margin: 0;
+}
+
+.description p:not(:last-child) {
+  margin-bottom: 0;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .profile-image {
+    left: 20px;
+    top: 40px;
+    width: 70px;
+    height: 70px;
+  }
+
+  .main-title {
+    left: 20px;
+    top: 130px;
+    font-size: 28px;
+    white-space: normal;
+  }
+
+  .description {
+    left: 20px;
+    top: 180px;
+    width: calc(100% - 40px);
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
